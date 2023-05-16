@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d009e4-c711-4fb9-a27f-04f286a14ce1" name="Changes" comment="Crashes OMMS Connect App">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/zhuruoling/omms/central/plugin/example/whitelist/ExampleWhitelist.java" afterDir="false" />
+    <list default="true" id="e7d009e4-c711-4fb9-a27f-04f286a14ce1" name="Changes" comment="example plugin for omms central 0.12.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/omms-central-0.12.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/omms-central-0.12.0-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/zhuruoling/omms/central/plugin/example/ExamplePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/zhuruoling/omms/central/plugin/example/ExamplePlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/zhuruoling/omms/central/plugin/example/controller/ExampleControllerConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/zhuruoling/omms/central/plugin/example/controller/ExampleControllerConsole.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +172,8 @@
       <workItem from="1684171131383" duration="4325000" />
       <workItem from="1684200895366" duration="3277000" />
       <workItem from="1684204198983" duration="733000" />
+      <workItem from="1684204938937" duration="556000" />
+      <workItem from="1684205634180" duration="69000" />
     </task>
     <task id="LOCAL-00001" summary="Crashes OMMS Connect App">
       <created>1684175094759</created>
@@ -183,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684175094759</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="example plugin for omms central 0.12.0">
+      <created>1684205417009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684205417009</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +197,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Crashes OMMS Connect App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crashes OMMS Connect App" />
+    <MESSAGE value="example plugin for omms central 0.12.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="example plugin for omms central 0.12.0" />
   </component>
 </project>

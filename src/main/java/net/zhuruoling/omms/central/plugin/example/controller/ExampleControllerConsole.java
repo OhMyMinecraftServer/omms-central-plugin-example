@@ -2,8 +2,8 @@ package net.zhuruoling.omms.central.plugin.example.controller;
 
 import net.zhuruoling.omms.central.controller.Controller;
 import net.zhuruoling.omms.central.controller.console.ControllerConsole;
-import net.zhuruoling.omms.central.controller.console.input.PrintTarget;
-import net.zhuruoling.omms.central.controller.console.output.InputSource;
+import net.zhuruoling.omms.central.controller.console.input.InputSource;
+import net.zhuruoling.omms.central.controller.console.output.PrintTarget;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 
