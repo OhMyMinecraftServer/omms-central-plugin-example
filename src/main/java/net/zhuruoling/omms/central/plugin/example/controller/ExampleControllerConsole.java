@@ -7,6 +7,8 @@ import net.zhuruoling.omms.central.controller.console.output.InputSource;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 
+import java.util.concurrent.locks.LockSupport;
+
 public class ExampleControllerConsole extends Thread implements ControllerConsole {
 
     ExampleController exampleController;
@@ -34,17 +36,24 @@ public class ExampleControllerConsole extends Thread implements ControllerConsol
     }
 
     /**
-     * write your custom console logic here
+     * write your custom console logic here;
+     * here is a simple echo console.
      */
     @Override
     public void run() {
-        logger.info("Type :q to exit console.");
+        printTarget.println("Type :q to exit console.",this);
         String line = inputSource.getLine();
-        while (line != null && !line.equals(":q")){
-            printTarget.println("input: %s".formatted( line), this);
-            line = inputSource.getLine();
-        }
-        logger.info("Exiting.");
+        try {
+            while (line != null && !line.equals(":q")) {
+                if (!line.isEmpty()){
+                    logger.debug(line);
+                    printTarget.println("input: %s".formatted(line), this);
+                }
+                sleep(50);
+                line = inputSource.getLine();
+            }
+        }catch (InterruptedException ignored){}
+        printTarget.println("Exiting.", this);
     }
 
     @Override
@@ -54,6 +63,7 @@ public class ExampleControllerConsole extends Thread implements ControllerConsol
 
     @Override
     public void close() {
-        System.out.println("Bye!");
+        printTarget.println("Bye!",this);
+        this.interrupt();
     }
 }
