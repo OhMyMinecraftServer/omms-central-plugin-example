@@ -1,5 +1,11 @@
 {
   "id": "example-plugin",
   "version": "0.0.1",
-  "main": "net.zhuruoling.omms.central.plugin.example.ExamplePlugin"
+  "main": "net.zhuruoling.omms.central.plugin.example.ExamplePlugin",
+  "dependencies": [
+    {
+      "id": "some_dependency",
+      "requirement": "*"
+    }
+  ]
 }
