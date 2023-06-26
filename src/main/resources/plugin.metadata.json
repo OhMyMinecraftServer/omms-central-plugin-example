@@ -4,8 +4,8 @@
   "main": "net.zhuruoling.omms.central.plugin.example.ExamplePlugin",
   "dependencies": [
     {
-      "id": "some_dependency",
-      "requirement": "*"
+      "id": "omms-central",
+      "requirement": ">=0.12.4"
     }
   ]
 }

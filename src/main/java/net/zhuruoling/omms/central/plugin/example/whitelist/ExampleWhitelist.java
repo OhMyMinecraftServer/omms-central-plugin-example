@@ -22,15 +22,20 @@ public class ExampleWhitelist extends Whitelist {
     public ExampleWhitelist(String name) {
         this.name = name;
         players = new ArrayList<>();
-        //generate 5 random name players
-        for (int i = 0; i < 5; i++) {
-            players.add(net.zhuruoling.omms.central.util.Util.randomStringGen(16));
-        }
+
     }
 
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public void init() {
+        //generate 5 random name players
+        for (int i = 0; i < 5; i++) {
+            players.add(net.zhuruoling.omms.central.util.Util.randomStringGen(16));
+        }
     }
 
     @Override
